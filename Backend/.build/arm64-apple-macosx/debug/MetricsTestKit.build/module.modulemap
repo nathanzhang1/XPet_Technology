@@ -1,4 +1,0 @@
-module MetricsTestKit {
-    header "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/MetricsTestKit.build/MetricsTestKit-Swift.h"
-    requires objc
-}

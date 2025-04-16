@@ -1,4 +1,0 @@
-module PostgresNIO {
-    header "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/PostgresNIO.build/PostgresNIO-Swift.h"
-    requires objc
-}
