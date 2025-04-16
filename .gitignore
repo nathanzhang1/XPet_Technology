@@ -1,2 +1,3 @@
 Backend/.build/
 Backend/.env/
+Backend/Sources/Backend/configure.swift
