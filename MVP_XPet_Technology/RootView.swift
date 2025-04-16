@@ -18,8 +18,18 @@ struct RootView: View {
                 LoginView()
             }
         }
-        .onAppear {
-            print("🌱 RootView sees isLoggedIn: \(session.isLoggedIn)")
+    }
+}
+
+struct RootView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            RootView()
+                .environmentObject({
+                    let session = UserSession()
+                    session.isLoggedIn = false
+                    return session
+                }())
         }
     }
 }

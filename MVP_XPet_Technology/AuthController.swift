@@ -26,7 +26,6 @@ class AuthController: ObservableObject {
 
         do {
             let response = try await APIService.login(data)
-            print("📥 Received login response: \(response.name), \(response.petName)") // ✅
             session.login(with: response)
 
         } catch {

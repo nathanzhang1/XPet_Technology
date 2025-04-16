@@ -13,10 +13,10 @@ struct MVP_XPet_TechnologyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            VStack {
-                Text("✅ App launched")
+            NavigationStack {
                 RootView()
-                    .environmentObject(session)
+                   .environmentObject(session)
+                   .animation(.default, value: session.isLoggedIn)
             }
         }
     }
