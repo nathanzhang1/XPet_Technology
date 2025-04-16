@@ -1,0 +1,4 @@
+module StructuredFieldValues {
+    header "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/StructuredFieldValues.build/StructuredFieldValues-Swift.h"
+    requires objc
+}

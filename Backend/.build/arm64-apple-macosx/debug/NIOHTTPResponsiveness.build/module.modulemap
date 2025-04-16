@@ -1,0 +1,4 @@
+module NIOHTTPResponsiveness {
+    header "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/NIOHTTPResponsiveness.build/NIOHTTPResponsiveness-Swift.h"
+    requires objc
+}

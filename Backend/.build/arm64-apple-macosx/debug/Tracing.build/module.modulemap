@@ -1,0 +1,4 @@
+module Tracing {
+    header "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Tracing.build/Tracing-Swift.h"
+    requires objc
+}

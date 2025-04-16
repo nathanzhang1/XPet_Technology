@@ -1,0 +1,77 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/master.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Controllers/TodoController.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoController.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoController.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoController~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoController.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/DTOs/TodoDTO.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoDTO.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoDTO.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoDTO~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/TodoDTO.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/EnvLoader.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/EnvLoader.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/EnvLoader.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/EnvLoader~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/EnvLoader.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Migrations/CreateTodo.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateTodo.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateTodo.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateTodo~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateTodo.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Migrations/CreateUser.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateUser.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateUser.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateUser~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/CreateUser.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Models/LoginRequest.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/LoginRequest.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/LoginRequest.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/LoginRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/LoginRequest.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Models/SignupRequest.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/SignupRequest.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/SignupRequest.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/SignupRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/SignupRequest.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Models/Todo.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/Todo.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/Todo.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/Todo~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/Todo.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/Models/User.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/User.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/User.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/User~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/User.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/configure.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/configure.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/configure.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/configure~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/configure.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/entrypoint.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/entrypoint.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/entrypoint.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/entrypoint~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/entrypoint.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/Sources/Backend/routes.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/routes.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/routes.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/routes~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/Backend.build/routes.swiftdeps"
+  }
+}

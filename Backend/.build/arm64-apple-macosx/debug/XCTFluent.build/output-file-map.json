@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/master.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/checkouts/fluent-kit/Sources/XCTFluent/DummyDatabase.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.swiftdeps"
+  },
+  "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/checkouts/fluent-kit/Sources/XCTFluent/TestDatabase.swift": {
+    "dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.d",
+    "object": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.swift.o",
+    "swiftmodule": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase~partial.swiftmodule",
+    "swift-dependencies": "/Users/nathanzhang/MVP_XPet_Technology/Backend/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.swiftdeps"
+  }
+}
