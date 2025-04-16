@@ -10,7 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @State private var username = ""
     @State private var password = ""
-    @State private var isShowingSignup = false
+    @StateObject private var auth = AuthController()
+    @EnvironmentObject var session: UserSession
 
     var body: some View {
         NavigationView {
@@ -20,23 +21,32 @@ struct LoginView: View {
                 TextField("Username", text: $username)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 300)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
 
                 SecureField("Password", text: $password)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 300)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
 
                 Button("Log In") {
-                    // Add login action later
+                    print("🟢 Login button pressed") // ✅ Add this
+                    Task {
+                        await auth.login(username: username, password: password, session: session)
+                    }
                 }
                 .frame(width: 300, height: 44)
                 .background(Color.blue)
                 .foregroundColor(.white)
                 .cornerRadius(8)
+                
+                if let error = auth.errorMessage {
+                    Text(error)
+                        .foregroundColor(.red)
+                }
 
-                NavigationLink("Sign Up", destination: SignupView())
-                    .frame(width: 300, height: 44)
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(8)
+                NavigationLink("Don't have an account?", destination: SignupView())
 
                 Spacer()
             }
@@ -45,6 +55,9 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+            .environmentObject(UserSession())
+    }
 }

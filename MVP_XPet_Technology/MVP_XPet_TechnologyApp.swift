@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MVP_XPet_TechnologyApp: App {
+    @StateObject private var session = UserSession()
+
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            VStack {
+                Text("✅ App launched")
+                RootView()
+                    .environmentObject(session)
+            }
         }
     }
 }
+

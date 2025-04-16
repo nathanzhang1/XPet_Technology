@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct RootView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @EnvironmentObject var session: UserSession
 
-#Preview {
-    RootView()
+    var body: some View {
+        Group {
+            if session.isLoggedIn {
+                HomeView(name: session.name, petName: session.petName)
+            } else {
+                LoginView()
+            }
+        }
+        .onAppear {
+            print("🌱 RootView sees isLoggedIn: \(session.isLoggedIn)")
+        }
+    }
 }

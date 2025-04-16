@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    let name: String
+    let petName: String
+
     var body: some View {
         VStack {
             VStack {
-                HeaderView()
-                PetSelectionView()
+                HeaderView(name: name)
+                PetSelectionView(petName: petName)
                 HappinessScoreView()
                 VStack {
                     BarkCoinsView()
@@ -23,13 +26,15 @@ struct HomeView: View {
 }
 
 struct HeaderView: View {
+    let name: String
+    
     var body: some View {
         HStack {
             Image(systemName: "person.crop.circle")
                 .resizable()
                 .frame(width: 40, height: 40)
             VStack(alignment: .leading) {
-                Text("Good evening, Alex!")
+                Text("Good evening, \(name)!")
                     .font(.headline)
                 Text("January 07, 2025")
                     .font(.subheadline)
@@ -45,10 +50,12 @@ struct HeaderView: View {
 }
 
 struct PetSelectionView: View {
+    let petName: String
+    
     var body: some View {
         HStack {
             Image(systemName: "dog")
-            Text("Kimchi")
+            Text(petName)
                 .font(.headline)
             Spacer()
             Image(systemName: "chevron.down")
@@ -154,6 +161,6 @@ struct BottomNavBar: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(name: "name", petName: "petName")
     }
 }
