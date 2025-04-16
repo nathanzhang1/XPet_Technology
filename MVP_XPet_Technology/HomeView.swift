@@ -3,15 +3,22 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            HeaderView()
-            PetSelectionView()
-            HappinessScoreView()
-            BarkCoinsView()
-            ActionButtonsView()
-            Spacer()
+            VStack {
+                HeaderView()
+                PetSelectionView()
+                HappinessScoreView()
+                VStack {
+                    BarkCoinsView()
+                    ActionButtonsView()
+                    Spacer()
+                }
+                .padding(.horizontal)
+            }
+            .padding()
+            
             BottomNavBar()
         }
-        .padding()
+
     }
 }
 
@@ -33,6 +40,7 @@ struct HeaderView: View {
                 .resizable()
                 .frame(width: 25, height: 25)
         }
+        .padding(.top)
     }
 }
 
@@ -45,34 +53,39 @@ struct PetSelectionView: View {
             Spacer()
             Image(systemName: "chevron.down")
         }
+        .padding(.vertical)
     }
 }
 
 struct HappinessScoreView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Happiness Score")
-                .font(.headline)
-                .padding(.top)
-            ZStack {
-                Circle()
-                    .trim(from: 0.0, to: 0.88)
-                    .stroke(LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.blue]), startPoint: .leading, endPoint: .trailing), lineWidth: 10)
-                    .rotationEffect(.degrees(-90))
-                    .frame(width: 150, height: 150)
-                Text("88")
-                    .font(.largeTitle)
-                    .bold()
+                .font(.title3)
+                .fontWeight(.semibold)
+                .padding(.bottom)
+            VStack {
+                ZStack {
+                    Circle()
+                        .trim(from: 0.0, to: 0.88)
+                        .stroke(LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.blue]), startPoint: .leading, endPoint: .trailing), lineWidth: 10)
+                        .rotationEffect(.degrees(-90))
+                        .frame(width: 150, height: 150)
+                    Text("88")
+                        .font(.largeTitle)
+                        .bold()
+                }
+                Image(systemName: "dog.fill") // Placeholder for pet image
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                Text("Up 3 points from yesterday!")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
             }
-            Image(systemName: "dog.fill") // Placeholder for pet image
-                .resizable()
-                .frame(width: 80, height: 80)
-            Text("Up 3 points from yesterday!")
-                .font(.subheadline)
-                .foregroundColor(.gray)
+            .frame(maxWidth: .infinity)
         }
         .padding()
-        .background(RoundedRectangle(cornerRadius: 20).fill(Color.gray.opacity(0.1)))
+        .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue.opacity(0.1)))
     }
 }
 
@@ -97,20 +110,22 @@ struct ActionButtonsView: View {
             Button(action: {}) {
                 HStack {
                     Text("Need Care Advice? Ask Here")
+                        .foregroundColor(.black)
                     Spacer()
                     Image(systemName: "arrow.up.circle.fill")
                 }
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 20).fill(Color.gray.opacity(0.2)))
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue.opacity(0.1)))
             }
             Button(action: {}) {
                 HStack {
                     Text("Reach Out to Kimchi’s Crew!")
+                        .foregroundColor(.black)
                     Spacer()
                     Image(systemName: "paperplane.fill")
                 }
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 20).fill(Color.gray.opacity(0.2)))
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue.opacity(0.1)))
             }
         }
         .padding(.vertical)
@@ -132,7 +147,7 @@ struct BottomNavBar: View {
             Spacer()
             Image(systemName: "ellipsis")
         }
-        .padding()
+        .padding(20.0)
         .background(Color.gray.opacity(0.1))
     }
 }
