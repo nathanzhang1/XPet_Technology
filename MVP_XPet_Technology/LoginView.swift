@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var password = ""
     @StateObject private var auth = AuthController()
     @EnvironmentObject var session: UserSession
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         VStack(spacing: 16) {
@@ -32,6 +33,9 @@ struct LoginView: View {
             Button("Log In") {
                 Task { @MainActor in
                     await auth.login(username: username, password: password, session: session)
+                    if auth.errorMessage == nil {
+                        dismiss()
+                    }
                 }
             }
             .frame(width: 300, height: 44)

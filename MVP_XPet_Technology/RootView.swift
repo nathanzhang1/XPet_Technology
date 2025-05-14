@@ -8,7 +8,7 @@ struct RootView: View {
       if session.isLoggedIn {
         HomeView(name: session.name, petName: session.petName)
       } else {
-        LoginView()
+        SignupView()
       }
     }
   }

@@ -10,11 +10,20 @@ import SwiftUI
 @main
 struct MVP_XPet_TechnologyApp: App {
     @StateObject private var session = UserSession()
+    @AppStorage("hasOnboarded") private var hasOnboarded = false
 
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                RootView()
+                if !hasOnboarded {
+                    WelcomeView {
+                        hasOnboarded = true
+                    }
+                } else if !session.isLoggedIn {
+                    SignupView();
+                } else {
+                    HomeView(name: session.name, petName: session.petName)
+                }
             }
             .environmentObject(session)
             .animation(.default, value: session.isLoggedIn)
