@@ -15,9 +15,9 @@ struct MVP_XPet_TechnologyApp: App {
         WindowGroup {
             NavigationStack {
                 RootView()
-                   .environmentObject(session)
-                   .animation(.default, value: session.isLoggedIn)
             }
+            .environmentObject(session)
+            .animation(.default, value: session.isLoggedIn)
         }
     }
 }

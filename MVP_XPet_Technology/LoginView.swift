@@ -30,7 +30,7 @@ struct LoginView: View {
                 .disableAutocorrection(true)
 
             Button("Log In") {
-                Task {
+                Task { @MainActor in
                     await auth.login(username: username, password: password, session: session)
                 }
             }
@@ -38,13 +38,18 @@ struct LoginView: View {
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(8)
+
+            HStack(spacing: 0) {
+                Text("Don't have an account? ")
+                    .foregroundColor(.primary)
+                NavigationLink("Sign up", destination: SignupView())
+                    .foregroundColor(.blue)
+            }
+            .font(.subheadline)
             
             if let error = auth.errorMessage {
-                Text(error)
-                    .foregroundColor(.red)
+                ErrorBannerView(message: error)
             }
-
-            NavigationLink("Don't have an account?", destination: SignupView())
 
             Spacer()
         }
